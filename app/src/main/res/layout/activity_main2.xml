@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ssj_recognized.stockpredictor.Main2Activity"
+    >
+
+    <ImageView
+        android:id="@+id/building"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/start"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCD6204E"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:src="@drawable/iconwhite"
+        android:layout_marginTop="95sp"
+        />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:text="Stock Predictor"
+        android:layout_marginTop="140sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/antipastro"
+        android:textStyle="bold"
+        android:textSize="45sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="Invest wisely"
+        android:gravity="center"
+        android:fontFamily="@font/antipastro"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="225sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50sp"
+        >
+
+        <Button
+            android:id="@+id/start"
+            android:background="@drawable/round"
+            android:layout_width="70sp"
+            android:text=">"
+            android:fontFamily="@font/antipastro"
+            android:textColor="#D6204E"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_height="70sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ssj_recognized.stockpredictor.MainActivity"
+    android:background="@drawable/start">
+
+
+    <ImageView
+        android:id="@+id/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCD6204E"/>
+
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:text="Stock Predictor"
+
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/antipastro"
+        android:textStyle="bold"
+        android:textSize="45sp"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:layout_marginTop="300sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:fontFamily="@font/antipastro"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="10sp"
+
+            android:text="Company"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            />
+
+        <Spinner
+
+            android:id="@+id/spinner1"
+            android:layout_width="350sp"
+            android:layout_centerInParent="true"
+            android:layout_height="55sp"
+            android:background="@drawable/round1"
+            android:spinnerMode="dropdown"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50sp"
+        >
+
+        <Button
+            android:id="@+id/begin"
+            android:background="@drawable/round"
+            android:layout_width="70sp"
+            android:text=">"
+            android:fontFamily="@font/antipastro"
+            android:textColor="#D6204E"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_height="70sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

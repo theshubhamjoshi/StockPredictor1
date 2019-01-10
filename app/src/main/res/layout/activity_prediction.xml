@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ssj_recognized.stockpredictor.prediction"
+    android:background="@drawable/start">
+
+
+
+
+    <ImageView
+        android:id="@+id/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCD6204E"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:text="Stock Predictor"
+
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/antipastro"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/companydp"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/companyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:fontFamily="@font/antipastro"
+            android:textColor="#FFFFFF"
+            android:text="amazon"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50sp"
+
+
+            android:textSize="35sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="200sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/antipastro"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="RMSE"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginTop="250sp"
+        >
+        <TextView
+            android:id="@+id/accuracy"
+            android:layout_width="200sp"
+            android:layout_height="80sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round1"
+
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/predtitle"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="330sp">
+        <EditText
+            android:focusable="false"
+            android:longClickable="false"
+
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Todays Prediction"
+            android:background="@android:color/transparent"
+
+            android:gravity="center"
+            android:cursorVisible="false"/>
+        <Button
+            android:id="@+id/changdate"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:background="@drawable/round"
+            android:text=">"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginTop="380sp"
+        android:id="@+id/predvalue"
+        >
+        <TextView
+            android:id="@+id/prediction"
+            android:layout_width="200sp"
+            android:layout_height="80sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round1"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D6204E"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_marginTop="330sp">
+        
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/companyname"/>
+
+    <RelativeLayout
+        android:id="@+id/graphlayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="400sp"
+        android:background="@drawable/round1">
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round"
+            android:text="x"
+            android:textSize="20sp"
+            android:textColor="#D6204E"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+
+            android:layout_height="285sp"
+            android:layout_marginTop="15sp"
+            android:id="@+id/linechart"></com.github.mikephil.charting.charts.LineChart>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:layout_marginTop="550sp"
+        android:id="@+id/graphbutton">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:src="@drawable/iconwhite"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:fontFamily="@font/antipastro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Graph"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000">
+        <ProgressBar
+            android:id="@+id/pbar"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/antipastro"
+            android:text="Loading\nPlease Wait"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="405sp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
